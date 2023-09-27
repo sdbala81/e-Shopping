@@ -1,0 +1,23 @@
+### 1. Get Product By Id
+GET http://localhost:6000/products/0F9F118B-8D41-4EE0-A294-5CBCFB6F61C1
+Accept: application/json
+
+### 2.  Create Products
+POST http://localhost:6000/products
+Content-Type: application/json
+{
+
+}
+
+
+### 3.  Update Product Quantity
+PUT http://localhost:6000/products
+Content-Type: application/json
+
+{
+  "productId": "0F9F118B-8D41-4EE0-A294-5CBCFB6F61C1",
+  "quantity": 10,
+  "isIncreaseQuantity": true
+}
+
+

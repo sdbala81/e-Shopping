@@ -1,0 +1,39 @@
+### 1. Get Orders By Id
+GET http://localhost:5000/orders/1001
+Accept: application/json
+
+
+### 2.  Create Orders
+POST http://localhost:5000/orders
+Content-Type: application/json
+
+{
+  "orderDate": "2020-05-25",
+  "customerId": "ec6b79c2-56fd-43e9-869c-6f22b91b8710",
+  "paymentMethod": "credit",
+  "orderItems": [
+    {
+      "productId": "ec6b79c2-56fd-43e9-869c-6f22b91b8715",
+      "quantity": 7
+    },
+    {
+      "productId": "ec6b79c2-56fd-43e9-869c-6f22b91b8710",
+      "quantity": 10
+    }
+  ]
+}
+
+### 3. Adralis Sample - Get All Books
+GET http://localhost:6000/api/authors?perPage=10&page=1
+Accept: application/json
+
+
+### 4. Adralis Sample - Create Author
+POST http://localhost:6000/api/authors
+Content-Type: application/json
+
+{
+  "name": "Bala",
+  "pluralsightUrl": "someurl",
+  "twitterAlias": "smth@tiwtter.com"
+}
