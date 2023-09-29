@@ -18,7 +18,7 @@ public class OrderDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
+
         modelBuilder.Entity<OrderItem>()
             .HasOne(i => i.Order)
             .WithMany(o => o.OrderItems)

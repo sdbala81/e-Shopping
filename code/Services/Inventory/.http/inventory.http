@@ -5,8 +5,11 @@ Accept: application/json
 ### 2.  Create Products
 POST http://localhost:6000/products
 Content-Type: application/json
-{
 
+{
+  "productId": "0F9F118B-8D41-4EE0-A294-5CBCFB6F61C1",
+  "quantity": 10,
+  "isIncreaseQuantity": false
 }
 
 
@@ -15,9 +18,24 @@ PUT http://localhost:6000/products
 Content-Type: application/json
 
 {
-  "productId": "0F9F118B-8D41-4EE0-A294-5CBCFB6F61C1",
-  "quantity": 10,
-  "isIncreaseQuantity": true
+  "orderItemDtos": [
+    {
+      "productId": "0F9F118B-8D41-4EE0-A294-5CBCFB6F61C1",
+      "quantity": 10,
+      "isIncreaseQuantity": false
+    },
+    {
+      "productId": "1EAE3B54-8ED5-4B52-BD6A-F6F078D73ED7",
+      "quantity": 8,
+      "isIncreaseQuantity": false
+    },
+    {
+      "productId": "3FC6B8D7-5820-4E65-9C0F-2B7D0D3E6A35",
+      "quantity": 10,
+      "isIncreaseQuantity": false
+    }
+  ]
 }
+
 
 

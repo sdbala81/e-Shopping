@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".http", ".http", "{EACD010C
 		.http\orders.http = .http\orders.http
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalApiHttpClients", "src\ExternalApiHttpClients\ExternalApiHttpClients.csproj", "{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,7 @@ Global
 		{CB63D78D-AFF4-4171-8658-EFBD7F8142AB} = {3BC96A63-01FF-4975-99D2-F47A2319DEBF}
 		{118B7819-DB1F-421B-9093-41BA27BD4B85} = {CB63D78D-AFF4-4171-8658-EFBD7F8142AB}
 		{B2CE5C4A-1733-4C40-B527-26A8F7CEBEBC} = {3BC96A63-01FF-4975-99D2-F47A2319DEBF}
+		{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487} = {CB63D78D-AFF4-4171-8658-EFBD7F8142AB}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B8EFE492-A040-4019-B703-EBD192349A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,5 +51,9 @@ Global
 		{B2CE5C4A-1733-4C40-B527-26A8F7CEBEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2CE5C4A-1733-4C40-B527-26A8F7CEBEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2CE5C4A-1733-4C40-B527-26A8F7CEBEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84A6CDA-E554-48DC-BC70-BDFCAE8A6487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

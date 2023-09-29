@@ -1,4 +1,5 @@
 using eShopping.Orders.DataAccess;
+using eShopping.Orders.ExternalApiHttpClients;
 using eShopping.Orders.UseCases;
 using eShopping.Orders.WebApi;
 
@@ -17,6 +18,7 @@ services.AddSwaggerGen();
 services.AddWebApiServices();
 services.AddUseCaseServices();
 services.AddDataAccessServices();
+services.AddHttpClientServices();
 
 var app = builder.Build();
 

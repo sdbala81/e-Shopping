@@ -6,6 +6,12 @@
         <Nullable>enable</Nullable>
         <AssemblyName>eShopping.Inventory.DataAccess</AssemblyName>
         <RootNamespace>eShopping.Inventory.DataAccess</RootNamespace>
+
+        <!--    ensure coding standards-->
+        <AnalysisMode>Recommended</AnalysisMode>
+        <AnalysisModeGlobalization>None</AnalysisModeGlobalization>
+        <AnalysisModeSecurity>All</AnalysisModeSecurity>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     </PropertyGroup>
 
     <ItemGroup>

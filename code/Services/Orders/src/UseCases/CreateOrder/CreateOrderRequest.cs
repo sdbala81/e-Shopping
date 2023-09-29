@@ -19,5 +19,7 @@ public class OrderItemDto
 {
     public Guid ProductId { get; set; }
 
-    public byte Quantity { get; set; }
+    public int Quantity { get; set; }
+
+    public bool IsIncreaseQuantity { get; set; }
 }

@@ -15,22 +15,27 @@ public class UpdateProductQuantityRequestHandler : IRequestHandler<UpdateProduct
 
     public async Task<UpdateProductQuantityResponse> Handle(UpdateProductQuantityRequest request, CancellationToken cancellationToken)
     {
-        var product = await _productRepository.GetByIdAsync(request.ProductId, cancellationToken);
-
-        if (request.IsIncreaseQuantity)
+        foreach (var orderItemDto in request.OrderItems)
         {
-            product.Quantity += request.Quantity;
-        }
-        else
-        {
-            product.Quantity -= request.Quantity;
-        }
+            var product = await _productRepository.GetByIdAsync(orderItemDto.ProductId, cancellationToken);
 
-        await _productRepository.UpdateAsync(product, cancellationToken);
+            Console.WriteLine($"Product: {product.Name} - Quantity: {product.Quantity}");
+
+            if (orderItemDto.IsIncreaseQuantity)
+            {
+                product.Quantity += orderItemDto.Quantity;
+            }
+            else
+            {
+                product.Quantity -= orderItemDto.Quantity;
+            }
+
+            await _productRepository.UpdateAsync(product, cancellationToken);
+        }
 
         return new UpdateProductQuantityResponse
         {
-            ProductId = product.Id
+            OrderItemDtos = request.OrderItems
         };
     }
 }
